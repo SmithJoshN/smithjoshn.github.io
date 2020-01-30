@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google Keep Remake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="menu-btn">
+                <button>Menu</button>
+            </div>
+            <div class="search">
+                <input type="text" class="search-box" id="search-box" placeholder="Search">
+            </div>
+            <div class="settings"></div>
+        </div>
+        <div class="main">
+            <div class="notes-area">
+                <div class="new-note" onclick="boxFocus()" onfocusout="boxUnfocus()">
+                    <div class="create-new">
+                        <div class="title hide-title" onclick="titleBoxFocus()" id="create-new-title" contenteditable="true" aria-multiline="false" role="textbox">Title</div>
+                        <div class="note-area" id="create-new-area" contenteditable="true" aria-multiline="true" role="textbox">Take a note...</div>
+                    </div>
+                </div>
+                <div class="notes" id="notes">
+                    <div class="note" id="note1">
+                        <div class="title">Static Note</div>
+                        <div class="content">
+                            I am already here!<br>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat magnam similique itaque vero aliquid quasi saepe quos, laboriosam sunt, maxime exercitationem accusamus dolorem reprehenderit nobis ab cum? Sapiente vero voluptates magni fugit non perspiciatis aliquam, itaque sint voluptatum iure voluptas harum nihil, at deleniti minima, optio culpa. Fuga, laudantium provident.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

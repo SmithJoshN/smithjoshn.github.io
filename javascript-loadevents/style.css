@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+.container{
+    background-color: #1C3144;
+    padding-bottom: 100px;
+}
+.page-heading{
+    background-color: #335C81;
+    margin: 0 auto;
+    width: 75vw;
+    padding: 30px;
+    text-align: center;
+}
+.page-content{
+    background-color: #D7DAE5;
+    margin: 0 auto;
+    width: 75vw;
+    padding: 30px;   
+}
+.t1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    color: #4EA699;
+}
+.s1{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    padding: 20px 0px 0px 20px;
+}
+.s3{
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding: 20px 0px 5px 0px;
+
+}
+.sectionTitleUnderline{
+    width: 230px;
+    border: 2px solid #DB504A;
+}
+.p1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    padding: 20px 0px;
+}
+.p2{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+    padding: 20px 20px;
+}
+.o1{
+    border: 4px solid #335C81;
+    display: block;
+    margin: 20px 0px;
+}
+.s2{
+    background-color: #335C81;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    padding: 5px;
+}
+
+.section-content{
+    padding-left: 50px;
+}
+.code-display{
+    padding: 20px;
+}
+.code-image{
+    display: block;
+    max-width: 60vw;
+    border: 2px solid #999;
+}
+.l1{
+    font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.l1 a{
+    color: black;
+    text-decoration: none;
+}
+.l1 a:hover{
+    color: #DB504A;
+}
+.clickBTN{
+    background-color: #335C81;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    transition: background-color 1.5s ease;
+}

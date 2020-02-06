@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Events</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display|Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="mainContainer">
+        <div class="page-heading">
+            <div class="t1">
+                JavaScript Events
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="l1">
+                For a reference list of JavaScript Events go to: 
+                <a href="https://www.w3schools.com/jsref/dom_obj_event.asp">W3 Schools JSEvents</a>
+            </div>
+
+
+            <div class="section1 on-load" id="onLoadDisplay">
+                <div class="section-heading">
+                    <div class="s1">On Load Event</div>
+                    <hr class="sectionTitleUnderline">
+                </div>
+                <div class="section-content">
+                    <div class="explanation p1">
+                        The On Load Event is when the document or 
+                        the webpage that you are viewing is loaded.
+                        You can get JavaScript to call a function or 
+                        code when the page is loaded.
+                    </div>
+                    <div class="o1 demo">
+                        <div class="s2">
+                            Demo
+                        </div>
+                        <div class="p2">
+                            To view demo reload the page.
+                        </div>
+                    </div>
+                    <div class="o1 code">
+                        <div class="s2">
+                            Code
+                        </div>
+                        <div class="code-display">
+                            <div class="option">
+                                <div class="s3">Option 1</div>
+                                <img class="code-image" src="../assets/option1.jpg" alt="">
+                            </div>
+                            <div class="option">
+                                <div class="s3">Option 2</div>
+                                <img class="code-image" src="../assets/option2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1">
+                <div class="section-heading">
+                    <div class="s1">Click Event</div>
+                    <hr class="sectionTitleUnderline">
+                </div>
+                <div class="section-content">
+                    <div class="explanation p1">
+                        The Click Event is when a user clicks something on the
+                        page, wether it be with their finger, or mouse. It triggers
+                        this event in JavaScript. You can use onClick for html and click
+                        keyword for JavaScript.
+                    </div>
+                    <div class="o1 demo">
+                        <div class="s2">
+                            Demo
+                        </div>
+                        <div class="p2">
+                            <button class="clickBTN" onclick="clickFunc()" id="htmlClickBTN">HTML Click</button>
+                            <button class="clickBTN" id="jsClickBTN">JavaScript Click</button>
+                        </div>
+                    </div>
+                    <div class="o1 code">
+                        <div class="s2">
+                            Code
+                        </div>
+                        <div class="code-display">
+                            <div class="option">
+                                <div class="s3">Option 1</div>
+                                <img class="code-image" src="../assets/click1.jpg" alt="">
+                            </div>
+                            <div class="option">
+                                <div class="p1">Press each of the buttons to see a click event.</div>
+                                <div class="s3">Option 2</div>
+                                <img class="code-image" src="../assets/click2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section1">
+                <div class="section-heading">
+                    <div class="s1">Form Events</div>
+                    <hr class="sectionTitleUnderline">
+                </div>
+                <div class="section-content">
+                    <div class="s3">Submit</div>
+                    <div class="explanation p1">
+                        The Submit Event occurs when a form is submitted.
+                    </div>
+                    <div class="s3">Reset</div>
+                    <div class="explanation p1">
+                        The Reset Event occurs when a form is resetted.
+                    </div>
+                    <div class="s3">Focus</div>
+                    <div class="explanation p1">
+                        The Focus Event occurs when a form element takes focus.
+                    </div>
+                    <div class="o1 code">
+                        <div class="s2">
+                            Code
+                        </div>
+                        <div class="code-display">
+                            <div class="option">
+                                <div class="s3">Option 1</div>
+                                <img class="code-image" src="../assets/formEvents.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

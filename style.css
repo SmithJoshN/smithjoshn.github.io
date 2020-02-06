@@ -2,17 +2,22 @@
     margin: 0px;
     font-family: 'Martel Sans', sans-serif;
 }
-.heading{
-    width: 75%;
-    margin: auto;
-    background-size: contain;
+.container{
+    background-color: #335C81;
 }
-.heading img{
+.page-heading{
+    width: 75vw;
+    margin: 0 auto;
+}
+.page-heading img{
     width: 100%;
+    font-size: 0;
+    line-height: 0;
 }
 .main{
-    width: 75%;
+    width: 75vw;
     margin: auto;
+    background-color: #D7DAE5;
 }
 .fluency-table{
     border-spacing: 0px;

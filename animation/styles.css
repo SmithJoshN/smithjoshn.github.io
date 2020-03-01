@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+}
+
+
+
+input{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: aquamarine;
+    outline: none;
+    display: block;
+    font-size: 16px;
+    transition: width 0.75s ease-out;
+    margin: 10px;
+}
+.focus-input{
+    border-radius: 50px;
+    width: 250px;
+    padding: 0px 20px;
+    color: #999;
+}
+input:focus::placeholder{
+    color: #888;
+}
+input:hover {
+    cursor: pointer;
+}
+.lock-bg{
+    background-image: url(lock.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.account-bg{
+    background-image: url(account.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

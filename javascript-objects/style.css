@@ -1,0 +1,19 @@
+.object{
+    border: solid 1px black;
+    width: 50%;
+    margin: 0 auto;
+}
+.titleView{
+    text-align: center;
+}
+.title{
+    font-size: 30px;
+}
+.nameView, .ageView, .shapeView, .colorView{
+    border: 1px solid black;
+    margin: 3px;
+}
+.label, .property{
+    display: table;
+    width: 50%;
+}

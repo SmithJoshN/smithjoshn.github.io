@@ -1,0 +1,23 @@
+.users{
+    width: 70%;
+    margin: 0px auto;
+}
+.people{
+    border: 3px solid #888;
+}
+.person{
+    padding: 10px;
+}
+.person:hover{
+    background-color: #666;
+}
+.personDetails{
+    position: relative;
+}
+.closeBTN{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: red;
+    cursor: pointer;
+}

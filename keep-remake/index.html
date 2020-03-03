@@ -8,36 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <div class="menu-btn">
-                <button>Menu</button>
-            </div>
-            <div class="search">
-                <input type="text" class="search-box" id="search-box" placeholder="Search">
-            </div>
-            <div class="settings"></div>
+    <div class="new-note-template" id="noteTemplate">
+        <div class="title">
+            <label>Title</label>
+            <input type="text" id="noteTitle">
         </div>
-        <div class="main">
-            <div class="notes-area">
-                <div class="new-note">
-                    <div class="create-new">
-                        <div class="title hide-title" onclick="titleBoxFocus()" id="create-new-title" contenteditable="true" aria-multiline="false" role="textbox">Title</div>
-                        <div class="note-area" id="new-note-text-box" contenteditable="true" aria-multiline="true" role="textbox">Take a note...</div>
-                    </div>
-                </div>
-                <div class="notes" id="notes">
-                    <div class="note" id="note1">
-                        <div class="title">Static Note</div>
-                        <div class="content">
-                            I am already here!<br>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat magnam similique itaque vero aliquid quasi saepe quos, laboriosam sunt, maxime exercitationem accusamus dolorem reprehenderit nobis ab cum? Sapiente vero voluptates magni fugit non perspiciatis aliquam, itaque sint voluptatum iure voluptas harum nihil, at deleniti minima, optio culpa. Fuga, laudantium provident.
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="note-message">
+            <label>Note</label>
+            <textarea name="" id="noteBody" cols="30" rows="10"></textarea>
         </div>
     </div>
+    <button id="addNoteBTN">Add Note</button>
+    <div class="note-section">
+        <div id="notes">
+
+        </div>
+    </div>
+    Icons made by <a href="https://www.flaticon.com/authors/roundicons" title="Roundicons">Roundicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
     <script src="main.js"></script>
 </body>
 </html>

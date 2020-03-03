@@ -13,6 +13,11 @@ jsClickBTN.addEventListener('click', function() {
     jsClickBTN.style.backgroundColor = "#4bb543";
     jsClickBTN.style.color = "#000";
 })
+jsClickBTN.addEventListener('touchBegin', function() {
+    jsClickBTN.innerHTML = "Added By Javascript"
+    jsClickBTN.style.backgroundColor = "#4bb543";
+    jsClickBTN.style.color = "#000";
+})
 
 function clickFunc(){
     htmlClickBTN.innerHTML = "Added By Javascript with HTML"

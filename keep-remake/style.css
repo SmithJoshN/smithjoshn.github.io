@@ -1,87 +1,49 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    outline: none;
-}
-.header{
-    display: flex;
-    background-color: #202124;
-    padding: 7px;
-    border-bottom: 1px solid #777;
-    align-items: center;
-}
-.menu-btn{
-    flex:1;
-}
-.search{
-    flex:3;
-}
-.search-box{
-    font-size: 16px;
-    padding: 13px;
-    border-radius: 8px;
-    border: none;
-    width: 100%;
-    background-color: white;
-}
-.settings{
-    flex:1;
-}
-.main{
-    background-color: #202124;
-    min-height: 100vh;
-}
-.notes-area{
-    width: 65%;
-    margin: 0px auto;
+.note-section{
+    width: 100vw;
+    height: 85vh;
 }
 .notes{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: start;
-    align-items: flex-start;
 }
 .note{
-    border: 1px solid #888;
-    border-radius: 8px;
-    padding: 10px 15px;
-    font-family: sans-serif;
-    flex: 1;
-    min-width: 25%;
-    max-width: 25%;
+    display: inline-block;
+    background-color: #444;
+    color: #fff;
     margin: 10px;
+    padding: 25px 10px;
+    border-radius: 5px;
+    max-width: 20%;
+    min-width: 20%;
+    position: relative;
 }
-.title{
-    color: #fff;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 5px 0px;
+.mover{
+
 }
-.hide-title{
-    display: none;
+.mover img{
+    position: absolute;
+    width: 10px;
+    top: 5px;
+    cursor: pointer;
 }
-.content{
-    color: #fff;
-    font-size: 14px;
-    line-height: 20px;
+.mover .left{
+    left:5px;
+    transform: rotateY(180deg);
 }
-.new-note{
-    width: 65%;
-    display: flex;
-    margin: 0px auto
+.mover .trash{
+    left: 50%;
+    right: auto;
+    width: 15px;
 }
-.create-new{
-    border: 1px solid #888;
-    border-radius: 8px;
-    padding: 10px 15px;
-    color: #999;
+.mover .right{
+    right: 5px;
+}
+.noteTitle{
+    font-weight: bold;
+    padding-bottom: 10px;
     font-family: sans-serif;
-    margin: 30px 0px;
-    flex: 1;
 }
-.create-new:hover{
-    cursor: text;
-}
-.create-new label:hover{
-    cursor: text;
+.noteBody{
+
 }

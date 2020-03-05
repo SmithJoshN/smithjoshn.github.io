@@ -1,0 +1,146 @@
+.moving-box .box {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #444;
+    margin: 0px 75px 75px 0px;
+    animation-name: r-box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes r-box {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 75px;
+    }
+    50% {
+        left: 75px;
+        top: 75px;
+    }
+    75% {
+        left: 0px;
+        top: 75px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.javascript-moving-box .box {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #444;
+    margin: 0px 75px 75px 0px;
+    animation-name: r-box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+@keyframes r-box {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 75px;
+    }
+    50% {
+        left: 75px;
+        top: 75px;
+    }
+    75% {
+        left: 0px;
+        top: 75px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+}
+
+.colorful-box .box{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation-name: colorful;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes colorful{
+    0%{
+        background-color: #bad80a;
+    }
+    10% {
+        background-color: yellow;
+    }
+    20% {
+        background-color:orange;
+    }
+    30% {
+        background-color: red;
+    }
+    40% {
+        background-color: #ec008c;
+    }
+    50% {
+        background-color: purple;
+    }
+    60% {
+        background-color: blue;
+    }
+    70% {
+        background-color: lightblue;
+    }
+    80% {
+        background-color: aquamarine;
+    }
+    90% {
+        background-color: green;
+    }
+    100% {
+        background-color: #bad80a;
+    }
+}
+
+.delayed-animation .box{
+    width: 75px;
+    height: 75px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #444;
+    animation-name: delay;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+}
+
+@keyframes delay {
+    0% {
+        width: 75px;
+    }
+    50% {
+        width: 500px;
+    }
+    100% {
+        width: 75px;
+    }
+}

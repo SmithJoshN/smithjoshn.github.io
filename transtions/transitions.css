@@ -1,0 +1,33 @@
+.color-tbox .box{
+    width: 75px;
+    height: 75px;
+    background-color: #444;
+    transition: background-color 0.5s ease;
+    color: #999;
+    text-align: center;
+}
+.color-tbox .box:hover {
+    background-color: #999;
+    color: #444;
+}
+.javascript-tbox .box {
+    width: 75px;
+    height: 75px;
+    background-color: #444;
+    transition: background-color 1s ease;
+}
+.new-background {
+    background-color: #999;
+}
+.grow-box .box{
+    width: 75px;
+    height: 75px;
+    background-color: #444;
+    transition: width 2s ease;
+    color: #fff;
+    text-align: center;
+}
+.grow-box .box:active{
+    width: 500px;
+    color: yellow;
+}

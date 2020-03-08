@@ -3,27 +3,27 @@
 }
 body{
     background-color: lightblue;
+    position: relative;
+}
+h1{
     text-align: center;
-    padding-top: 70px;
 }
 .cloud{
-    margin-bottom: 200px;
+    position: absolute;
+    top: 100px;
+    left: 30%;
+    z-index: 1;
 }
-a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
+.dynamicCloud{
+    position: absolute;
+    z-index: 1;
 }
-a:hover{
-    color: #555;
-}
-
-
-
-.cloud{
-/*    transform: rotate(90deg);*/
-/*    transform: rotateX(30deg);*/
-/*    transform: scale(3);*/
-/*    transform: translate(30px);*/
-/*    transform: skewX(30deg);*/
+.sun{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    right: 50px;
 }

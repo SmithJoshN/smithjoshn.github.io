@@ -1,39 +1,66 @@
-const box = document.getElementById("box");
-var i = 0;
-var temp = 0;
-var x = true;
+var changeWeather = document.getElementById("weather");
 
-document.addEventListener("DOMContentLoaded", function(){
-    var rect = box.getBoundingClientRect();
-    move(i);
-})
-document.addEventListener("keydown", function(){
-    temp = i;
-    i = temp;
-    x = !x;
-})
+var sun = document.getElementById('sun');
+var cloud = document.getElementById('cloud');
+var clouds = document.getElementById('clouds');
 
-function move(i) {
-    if (i > document.body.clientWidth - 100) return;
+var weatherReport = ['sunny', 'cloudy', 'rainy', 'clear']
+var weatherIndex = 3;
+var currentWeather;
 
-    setTimeout(function (){
-        if(x){
-            transformBox(i, temp);
-            console.log("("+ i + ", " + temp + ")")
-        }
-        else{
-            transformBox(temp, i);
-            console.log("("+ temp + ", " + i + ")")
-        }
-        i+= 1;
-        move(i++);
-    }, 1);
+changeWeather.onclick = ()=>{
+    document.getElementsByTagName('h1')[0].style.display = "none";
+    if(weatherIndex == 3){
+        weatherIndex = 0;
+    }
+    else{
+        weatherIndex += 1;
+    }
+    currentWeather = weatherReport[weatherIndex];
+
+    switch(currentWeather){
+        case "sunny":
+            sunnyWeather()
+            break;
+        case "cloudy":
+            cloudyWeather()
+            break;
+        case "rainy":
+            rainyWeather()
+            break;
+        case "clear":
+            clearWeather()
+            break;
+    }
 }
 
-
-function transformBox(x, y){
-    box.style.transform = "translate(" + x + "px, " + y + "px)";
+function sunnyWeather(){
+    sun.style.display = "block"
+    cloud.style.display = "none";
 }
 
-var axis = true;
-var direction = "left";
+function clearWeather(){
+    document.body.style.backgroundColor = "lightblue";
+    clouds.innerHTML = ""
+}
+function rainyWeather(){
+    sun.style.display = "none";
+    document.body.style.backgroundColor = "#777";
+}
+function cloudyWeather(){
+    let displayedClouds = 10;
+    for(var i = 0; i < displayedClouds; i++){
+        let cloudNode = document.createElement("img");
+        cloudNode.src = "assets/cloud.png";
+        cloudNode.classList.add("dynamicCloud")
+        let left = getRandomInt(10) * 10 + "%";
+        let top = getRandomInt(50) * 4 + "px";
+        cloudNode.style.left = left;
+        cloudNode.style.top = top;
+        clouds.appendChild(cloudNode);
+    }
+}
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }

@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 
+
+
 addNoteBtn.onclick = addNote;
 
 function addNote(){

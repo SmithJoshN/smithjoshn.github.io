@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+}
+.grid{
+    position: relative;
+}
+.block{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    position: absolute;
+}
+
+.head{
+    background-color: rgb(0, 200, 0);
+}
+
+.cherry{
+    background-color: rgb(200, 0, 0);
+    border-radius: 50%;
+}

@@ -17,6 +17,7 @@
     max-width: 20%;
     min-width: 20%;
     position: relative;
+    transition: width ease 1s;
 }
 .mover{
 

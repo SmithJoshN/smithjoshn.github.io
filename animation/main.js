@@ -1,36 +1,42 @@
-const username = document.getElementById("username");
-const password = document.getElementById("password");
+const range = document.getElementById("speedRange");
+const ball = document.getElementById("ball");
+const ballImg = document.getElementById("ballImg")
 
-username.onfocus = function(){
-    focusInput(username);
-    username.classList.remove("account-bg");
-    username.setAttribute("placeholder", "Username");
-}
-username.onblur = function(){
-    blurInput(username);
-    username.removeAttribute("placeholder");
-    if(username.value == ""){
-        username.classList.add("account-bg")
+
+range.addEventListener("change", function(){
+    speed = Math.ceil(((range.value / 100)) * 10) + 2
+    ball.style.animationDuration = speed + "s";
+    ballImg.style.animationDuration = speed + "s";
+})
+
+const radios = document.getElementsByName("bounce");
+
+radios.forEach(node => {
+    node.addEventListener("click", function(){
+        changeBounce(node)
+    })
+});
+
+const bounceBall = document.getElementById("bounceBall");
+
+function changeBounce(node){
+    changeBackground();
+    switch(node.id){
+        case "low":
+            bounceBall.style.animationName = "lowBounce";
+            break;
+        case "med":
+            bounceBall.style.animationName = "medBounce";
+            break;
+        case "high":
+            bounceBall.style.animationName = "highBounce";
+            break;
     }
-}
-password.onblur = function(){
-    blurInput(password);
-    password.removeAttribute("placeholder");
-    if(password.value == ""){
-        password.classList.add("lock-bg")
-    }
-}
-password.onfocus = function(){
-    focusInput(password);
-    password.classList.remove("lock-bg");
-    password.setAttribute("placeholder", "Password");
 }
 
-function blurInput(node){
-    if(node.value == ""){
-        node.classList.remove('focus-input');
-    }
-}
-function focusInput(node){
-    node.classList.add("focus-input")
+function changeBackground(){
+    red = Math.ceil(Math.random() * 255);
+    green = Math.ceil(Math.random() * 255);
+    blue = Math.ceil(Math.random() * 255);
+    document.body.style.backgroundColor = "rgb("+ red + ", " + green + ", " + blue + ")"
 }

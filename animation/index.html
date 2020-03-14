@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animation</title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <h1>Welcome</h1>
-            <form class="form">
-                <input class="account-bg" type="text" id="username">
-                <input class="lock-bg" type="password" id="password">
-                <button type="submit" id="login-button">Login</button>
-            </form>
-        </div>
+    <h4>Speed</h4>
+    <label>Fast</label>
+    <input type="range" name="" id="speedRange">
+    <label>Slow</label>
+    <h4>Bounce</h4>
+    <label>Low</label>
+    <input type="radio" id="low" name="bounce">
+    <label>Medium</label>
+    <input type="radio" id="med" name="bounce" checked>
+    <label>High</label>
+    <input type="radio" id="high" name="bounce">
+
+    <div class="bounce" id="bounceBall"><div class="ball" id="ball"><img src="download.jfif" id="ballImg"></div></div>
+    <div class="ground">
+        <hr>
     </div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <script src="main.js"></script>
 </body>
 </html>

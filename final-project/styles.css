@@ -1,0 +1,173 @@
+body{
+    background-color: rgb(231, 231, 231);
+}
+.container{
+    display: flex;
+    padding: 20px;
+    align-items: flex-start
+}
+.header{
+    text-align: center;
+}
+.search-results{
+    background-color: #fff;
+    margin: 50px 20px;
+    padding: 20px;
+    flex: 3;
+    transition: height 3s linear;
+}
+.search-bar{
+    width: 25%;
+    padding: 2px;
+    border-radius: 10px 0px 0px 10px;
+    border: 3px solid #444;
+    border-right: none;
+    margin: 50px 0px;
+    font-size: 20px;
+    outline: none;
+}
+.search-btn{
+    margin-left: -5px;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    background-color: #00cca0;
+    border-radius: 0px 10px 10px 0px;
+    outline: none;
+}
+.recipe{
+    width: 300px;
+    height: auto;
+    border: 1px solid #999;
+    margin: 7px;
+    display: inline-block;
+    position: relative;
+    transition: all 1s ease-out;
+}
+.heart-icon{
+    display: none;
+    position: absolute;
+    width: 225px;
+    height: 215px;
+    left: 50px;
+    top: 50px;
+    transform: scale(.25);
+    background: transparent url("./heart.png") no-repeat 0 0;
+}
+.heart-icon:hover{
+    background-position: 0px -220px;
+    cursor: pointer;
+}
+.heart-icon:active{
+    background-position: 0px -440px;
+}
+.recipe-image-display:hover .heart-icon{
+    display: block;
+}
+.recipe-image-display:hover .delete{
+    display: block;
+}
+.recipe-image{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.recipe .text-container{
+    padding: 8px 5px;
+}
+.recipe-title{
+    padding: 10px 0px;
+}
+.recipe-title a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+}
+.recipe-title a:hover{
+    text-decoration: underline;
+    color: #00cca0;
+}
+.yeild-time{
+    color: #777;
+    font-size: 12px;
+}
+.results-area{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.showMore{
+    display: none;
+    background-color: rgb(207, 207, 207);
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+.showMore:hover{
+    background-color: #999;
+    cursor: pointer;
+}
+
+.favorites{
+    background-color: #fff;
+    margin: 50px 20px;
+    padding: 20px;
+    flex: 1;
+    max-height: 150vh;
+    overflow-y: scroll;
+    position: sticky;
+    top: 0px;
+    transition: 4s ease-in;
+}
+
+.delete{
+    display: none;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-family: sans-serif;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*
+Animations
+*/
+
+.c{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #222;
+    height: 50px;
+    width: 50px;
+}
+.c1{
+    animation: load 3s linear -1s infinite forwards normal;
+}
+.c2{
+    animation: load 3s linear 0s infinite forwards normal;
+}
+.c3{
+    animation: load 3s linear -2s infinite forwards normal;
+}
+
+@keyframes load{
+    0%, 100%{
+        transform: scale(0);
+    }
+    25%{
+        transform: scale(.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(.5);
+    }
+}
+
+/*
+    Transitions
+*/
+

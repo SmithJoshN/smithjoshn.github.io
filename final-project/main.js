@@ -34,10 +34,12 @@ console.log(JSON.stringify(API.params))
 
 document.addEventListener("DOMContentLoaded", function () {
   favorites = JSON.parse(localStorage.getItem("favorites"))
-  favorites.forEach(fav => {
-    console.log(fav[0].recipe, fav[1])
-    HTML_ELEM.favorite_recipes.innerHTML += htmlData.displayResult(fav[0].recipe, fav[1], true)
-  })
+  if (favorites != null) {
+    favorites.forEach(fav => {
+      console.log(fav[0].recipe, fav[1])
+      HTML_ELEM.favorite_recipes.innerHTML += htmlData.displayResult(fav[0].recipe, fav[1], true)
+    })
+  }
 })
 
 // ** Javascript: events

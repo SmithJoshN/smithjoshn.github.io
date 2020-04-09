@@ -17,8 +17,8 @@ HTML_ELEM.favorite_recipes = document.getElementById("favorite-recipes")
 
 API = {} || API
 API.endpoint = 'https://api.edamamm.com/search'
-API.api_key = "a4ead3b684d0674e1449f6fbe361d4a2"
-API.app_id = "34cec683"
+API.api_key = "8997fbe35e9b08c53b713db584e2822e"
+API.app_id = "35279b5f"
 API.params = { app_key: API.api_key, app_id: API.app_id, q: "Chicken" }
 // ** Javascript: Arrays
 API.hit_list = []

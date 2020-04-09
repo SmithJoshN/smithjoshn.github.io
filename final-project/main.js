@@ -8,7 +8,6 @@ HTML_ELEM = {} || HTML_ELEM
 HTML_ELEM.searchBar = document.getElementById("searchInp")
 HTML_ELEM.search_btn = document.getElementById("searchBtn")
 HTML_ELEM.results = document.getElementById("resultsDiv")
-HTML_ELEM.heart = document.getElementById("heart-icon")
 HTML_ELEM.showMore = document.getElementById("show-more")
 HTML_ELEM.searchTitle = document.getElementById("searchResultsTitle")
 HTML_ELEM.loading = document.getElementById("loadingContent")
